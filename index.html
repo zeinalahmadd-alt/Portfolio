@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zein Alahmad | Informatics Engineering Student</title>
+  <meta name="description" content="Portfolio of Zein Alahmad, a third-year Informatics Engineering student at the University of Homs, aspiring full stack developer.">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <!-- Share card (what WhatsApp / LinkedIn / Telegram show when someone shares your link).
+      TODO: after you publish the site, replace YOUR-USERNAME with your GitHub username in the two URLs below. -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Zein Alahmad | Informatics Engineering Student">
+  <meta property="og:description" content="Third-year Informatics Engineering student at the University of Homs, on the road to becoming a full stack developer.">
+  <meta property="og:url" content="https://YOUR-USERNAME.github.io/portfolio/">
+  <meta property="og:image" content="https://YOUR-USERNAME.github.io/portfolio/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Zein Alahmad</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">
+        <!-- Moon Icon (shown in dark mode) -->
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+        <!-- Sun Icon (shown in light mode) -->
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="5"/>
+          <line x1="12" y1="1" x2="12" y2="3"/>
+          <line x1="12" y1="21" x2="12" y2="23"/>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+          <line x1="1" y1="12" x2="3" y2="12"/>
+          <line x1="21" y1="12" x2="23" y2="12"/>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO SECTION ===================== -->
+  <section class="section hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <p class="hero-subtitle">Hello, I'm</p>
+        <h1 class="hero-title">Zein Alahmad</h1>
+        <h2 class="hero-role">Informatics Engineering Student</h2>
+        <p class="status-chip"><span class="status-dot" aria-hidden="true"></span>Currently learning Vue.js</p>
+        <p class="hero-description">
+          Third-year student at the University of Homs, on the road to becoming a
+          full stack developer. I'm learning by building, one project at a time.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        </div>
+        <!-- TODO: replace your-username in the two links below -->
+        <div class="hero-social">
+          <a href="https://github.com/zeinalahmadd-alt" class="social-link" target="_blank" rel="noopener" aria-label="GitHub"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg></a>
+          <a href="https://www.linkedin.com/" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="#contact" class="social-link" aria-label="Email me"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4l-10 8L2 4"/></svg></a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image-wrapper">
+          <!-- TODO: replace src with your own photo, e.g. images/me.jpg -->
+          <img
+            src="./images/photo1.png"
+            alt="Zein Alahmad"
+            class="hero-image"
+            width="400"
+            height="400"
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT SECTION ===================== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">About Me</p>
+        <h2 class="section-title">A Few Words About My Journey</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm Zein Alahmad, a 20-year-old third-year Informatics Engineering
+            student at the University of Homs. My goal is to become a full stack
+            developer, and I'm building that foundation step by step.
+          </p>
+          <p>
+            So far I've learned C++ fundamentals, HTML, CSS, JavaScript, and
+            Git &amp; GitHub. Right now I'm learning Vue.js, and React is next on my list.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number" data-target="3">0</span>
+              <span class="stat-label">Year of Study</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">Vue.js</span>
+              <span class="stat-label">Learning Now</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">React</span>
+              <span class="stat-label">Up Next</span>
+            </div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
+            <div>
+              <p class="edu-label">Education</p>
+              <p class="edu-title">Informatics Engineering</p>
+              <p class="edu-meta">University of Homs &middot; Third year</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-image-wrapper">
+          <!-- TODO: replace src with your own photo -->
+          <img
+            src="images/about.png"
+            alt="Zein Alahmad"
+            class="about-image"
+            width="500"
+            height="600"
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS SECTION ===================== -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">What I Know</p>
+        <h2 class="section-title">Tech &amp; Tools</h2>
+      </div>
+      <div class="skills-grid reveal-stagger">
+        <div class="skill-card reveal-child">
+          <div class="skill-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+          <h3 class="skill-name">Frontend</h3>
+          <p class="skill-desc">Structure, style and interactivity for the web.</p>
+          <div class="skill-badges">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag tag--learning">Vue.js</span>
+          </div>
+        </div>
+        <div class="skill-card reveal-child">
+          <div class="skill-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg></div>
+          <h3 class="skill-name">Programming</h3>
+          <p class="skill-desc">The fundamentals of programming.</p>
+          <div class="skill-badges">
+            <span class="tag">C++</span>
+          </div>
+        </div>
+        <div class="skill-card reveal-child">
+          <div class="skill-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg></div>
+          <h3 class="skill-name">Version Control</h3>
+          <p class="skill-desc">Tracking and sharing my code.</p>
+          <div class="skill-badges">
+            <span class="tag">Git</span>
+            <span class="tag">GitHub</span>
+          </div>
+        </div>
+        <div class="skill-card reveal-child">
+          <div class="skill-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+          <h3 class="skill-name">Up Next</h3>
+          <p class="skill-desc">Where I&rsquo;m heading on the road to full stack.</p>
+          <div class="skill-badges">
+            <span class="tag tag--learning">React</span>
+            <span class="tag tag--learning">Backend</span>
+          </div>
+        </div>
+      </div>
+      <p class="skills-note reveal"><span class="tag tag--learning">Dashed</span> = currently learning or coming next</p>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS SECTION ===================== -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">My Work</p>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+      <div class="timeline" id="timeline">
+        <div class="timeline-line" aria-hidden="true"><div class="timeline-progress"></div></div>
+        <div class="timeline-dot" aria-hidden="true"></div>
+
+        <div class="timeline-items">
+        <!-- ==================================================================
+            HOW TO ADD A PROJECT
+            Copy one whole <article class="timeline-item reveal"> ... </article> block,
+            paste it after the last one, then change the title, description, tags,
+            image (images/your-image.png) and the GitHub / Live Demo links.
+            - Left/right alternation, numbering and the timeline line are automatic.
+            - No live demo? Delete the "Live Demo" link. Not finished? Add
+              <span class="project-status">In progress</span> next to the project-kicker span.
+            - Replace the placeholder blocks below with your real projects, and
+              delete any you don't need.
+            ================================================================== -->
+          <article class="timeline-item reveal">
+          <span class="timeline-node" aria-hidden="true"></span>
+          <div class="timeline-media">
+            <div class="project-image-wrapper">
+              <img src="images/charity-commuinty.png" alt="Personal Portfolio" class="project-image" width="500" height="320" loading="lazy">
+            </div>
+          </div>
+          <div class="timeline-content">
+            <div class="project-meta">
+              <span class="project-kicker"></span>
+            </div>
+            <h3 class="project-title">Charity Community</h3>
+            <p class="project-desc">A German-language website for a non-profit association:
+              an about section with impact stats, an events carousel, a contact form, a support pop-up, and a dark/light theme.
+              A concept project with sample content.</p>
+            <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/zeinalahmadd-alt/Charity-Commuinty" class="btn btn-small btn-primary" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://vibe-e0ebb8.tiiny.site/" class="btn btn-small btn-outline" target="_blank" rel="noopener">Live Demo</a>
+            </div>
+          </div>
+            </article>
+
+            <article class="timeline-item reveal">
+          <span class="timeline-node" aria-hidden="true"></span>
+          <div class="timeline-media">
+            <div class="project-image-wrapper">
+              <img src="images/xo-game.png" alt="Personal Portfolio" class="project-image" width="500" height="320" loading="lazy">
+            </div>
+          </div>
+          <div class="timeline-content">
+            <div class="project-meta">
+              <span class="project-kicker"></span>
+            </div>
+            <h3 class="project-title">XO Game</h3>
+            <p class="project-desc">A two-player game featuring a scoreboard (wins, draws, losses), a reset button, and dark and light themes.</p>
+            <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/zeinalahmadd-alt/XO-Game" class="btn btn-small btn-primary" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://astounding-chimera-a801f7.netlify.app" class="btn btn-small btn-outline" target="_blank" rel="noopener">Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <span class="timeline-node" aria-hidden="true"></span>
+          <div class="timeline-media">
+            <div class="project-image-wrapper">
+              <img src="images/azan-app.png" alt="[Project Name]" class="project-image" width="500" height="320" loading="lazy">
+            </div>
+          </div>
+          <div class="timeline-content">
+            <div class="project-meta">
+              <span class="project-kicker"></span>
+            </div>
+            <h3 class="project-title">Azan App</h3>
+            <p class="project-desc">Daily prayer times and the next prayer.</p>
+            <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Api</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/zeinalahmadd-alt/Adhan-App" class="btn btn-small btn-primary" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://grand-tanuki-c8c6e3.netlify.app/" class="btn btn-small btn-outline" target="_blank" rel="noopener">Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <span class="timeline-node" aria-hidden="true"></span>
+          <div class="timeline-media">
+            <div class="project-image-wrapper">
+              <img src="images/todo-list.png" alt="[Project Name]" class="project-image" width="500" height="320" loading="lazy">
+            </div>
+          </div>
+          <div class="timeline-content">
+            <div class="project-meta">
+              <span class="project-kicker"></span>
+            </div>
+            <h3 class="project-title">To-Do List</h3>
+            <p class="project-desc">Add, edit, and delete tasks; filtering (All, Active, Completed); and dark mode.</p>
+            <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/zeinalahmadd-alt/ToDo-list" class="btn btn-small btn-primary" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://todolist.zeinalahmadd.workers.dev/" class="btn btn-small btn-outline" target="_blank" rel="noopener">Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <span class="timeline-node" aria-hidden="true"></span>
+          <div class="timeline-media">
+            <div class="project-image-wrapper">
+              <img src="images/quiz-app.png" alt="[Project Name]" class="project-image" width="500" height="320" loading="lazy">
+            </div>
+          </div>
+          <div class="timeline-content">
+            <div class="project-meta">
+              <span class="project-kicker"></span>
+              <!-- <span class="project-status">In progress</span> -->
+            </div>
+            <h3 class="project-title">Quiz App</h3>
+            <p class="project-desc">A timed quiz where you select the category (JS, HTML, CSS, General) and difficulty level; at the end, you see your score and average time.</p>
+            <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/zeinalahmadd-alt/Quiz-App" class="btn btn-small btn-primary" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://shy-brook-cd27.zeinalahmadd.workers.dev/" class="btn btn-small btn-outline" target="_blank" rel="noopener">Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <span class="timeline-node" aria-hidden="true"></span>
+          <div class="timeline-media">
+            <div class="project-image-wrapper">
+              <img src="images/weather-app.png" alt="[Project Name]" class="project-image" width="500" height="320" loading="lazy">
+            </div>
+          </div>
+          <div class="timeline-content">
+            <div class="project-meta">
+              <span class="project-kicker"></span>
+            </div>
+            <h3 class="project-title">Weather App</h3>
+            <p class="project-desc">Weather cards for your location and other cities (temperature, humidity, wind, season).</p>
+            <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Api</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/zeinalahmadd-alt/Weather-App" class="btn btn-small btn-primary" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://weather-app.zeinalahmadd.workers.dev/" class="btn btn-small btn-outline" target="_blank" rel="noopener">Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- <article class="timeline-item reveal">
+          <span class="timeline-node" aria-hidden="true"></span>
+          <div class="timeline-media">
+            <div class="project-image-wrapper">
+              <img src="images/project-6-placeholder.svg" alt="[Project Name]" class="project-image" width="500" height="320" loading="lazy">
+            </div>
+          </div>
+          <div class="timeline-content">
+            <div class="project-meta">
+              <span class="project-kicker"></span>
+            </div>
+            <h3 class="project-title">[Project Name]</h3>
+            <p class="project-desc">[Brief description of the project. What problem does it solve?]</p>
+            <div class="project-tags">
+                <span class="tag">Vue.js</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-small btn-primary" target="_blank" rel="noopener">GitHub</a>
+              <a href="#" class="btn btn-small btn-outline" target="_blank" rel="noopener">Live Demo</a>
+            </div>
+          </div>
+        </article> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT SECTION ===================== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">Get In Touch</p>
+        <h2 class="section-title">Let's Work Together</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="contact-lead">
+            Want to talk about a project, an opportunity, or just say hi?
+            Send me a message and I'll get back to you.
+          </p>
+          <div class="contact-details">
+            <!-- TODO: replace with your real email (one place only: the form uses this address too) -->
+            <a href="mailto:zeinalahmadd@example.com" class="contact-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4l-10 8L2 4"/></svg>
+              <span>zeinalahmadd@example.com</span>
+            </a>
+            <!-- TODO: replace your-username -->
+            <a href="https://github.com/zeinalahmadd-alt" class="contact-item" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              <span>github.com/zeinalahmadd-alt</span>
+            </a>
+            <a href="https://www.linkedin.com/in/" class="contact-item" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              <span>linkedin.com/in/zeinalahmadd</span>
+            </a>
+          </div>
+          <p class="status-chip"><span class="status-dot" aria-hidden="true"></span>Currently learning Vue.js, React is next</p>
+        </div>
+        <form class="contact-form" action="#" method="POST">
+          <div class="form-group">
+            <label for="contact-name" class="form-label">Your Name</label>
+            <input type="text" id="contact-name" name="name" class="form-input" placeholder="Enter your name" required>
+          </div>
+          <div class="form-group">
+            <label for="contact-email" class="form-label">Your Email</label>
+            <input type="email" id="contact-email" name="email" class="form-input" placeholder="Enter your email" required>
+          </div>
+          <div class="form-group">
+            <label for="contact-message" class="form-label">Message</label>
+            <textarea id="contact-message" name="message" class="form-input form-textarea" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-text">&copy; <span id="year">2026</span> Zein Alahmad. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#home" class="footer-link">Home</a>
+          <a href="#about" class="footer-link">About</a>
+          <a href="#skills" class="footer-link">Skills</a>
+          <a href="#projects" class="footer-link">Projects</a>
+          <a href="#contact" class="footer-link">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
